@@ -1,0 +1,16 @@
+{
+	"manifest_version": 1,
+
+	"name": "Neuter Facebook",
+	"desctiption": "This extension blocks distracting elements on Facebook",
+	"version": "0.1",
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"activeTab",
+		"https://ajax.googleapis.com/"
+	]
+}

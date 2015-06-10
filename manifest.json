@@ -3,7 +3,7 @@
 
 	"name": "Neuter Facebook",
 	"description": "This extension blocks distracting elements on Facebook",
-	"version": "0.1",
+	"version": "0.5",
 
 	"content_scripts": [
 		{

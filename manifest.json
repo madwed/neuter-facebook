@@ -5,21 +5,17 @@
 	"description": "This extension blocks distracting elements on Facebook",
 	"version": "0.1",
 
-	"background": {
-		"scripts": ["neuter.js"],
-		"persistent": false
-	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.facebook.com/*"],
+			"css": ["neuter.css"],
+			"js": ["neuter.js"]
 
-	"page_action": {
-		"default_title": "Antisocial Network",
-		"default_icon": "icon.png",
-		"default_popup": "popup.html"
-	},
+		}
+	],
 	
 	"permissions": [
 		"activeTab",
-		"tabs",
-		"https://ajax.googleapis.com/",
-		"https://facebook.com/"
+		"tabs"
 	]
 }
